@@ -1,0 +1,168 @@
+/* 
+ css reset
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #eee;
+}
+
+.globalHeader {
+  /* border: 1px solid red; */
+  margin: 20px;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 0 100px;
+  }
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.searchForm > input {
+  margin-right: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background: #0294d2;
+  color: white;
+  font-size: 18px;
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.siteList {
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+@media (min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .siteList > li {
+    margin-right: 25px;
+  }
+}
+
+.siteList .site {
+  /* border: 1px solid red; */
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+  /* height: 128px; */
+}
+
+.siteList .site > .logo {
+  /* border: 1px solid red; */
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.siteList .site > .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  cursor: default;
+}
+.siteList .site:hover > .close {
+  display: block;
+}
+
+.siteList .addButton {
+  background: white;
+  /* border: 1px solid black; */
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  height: 128px;
+}
+
+.siteList .addButton .icon {
+  font-size: 64px;
+}
+
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+/*# sourceMappingURL=style.c04ec13f.css.map */
