@@ -185,7 +185,9 @@ $(document).on("keypress", function (e) {
   }
 });
 $(".searchBtn").on("click", function () {
-  console.log($(".searchText").innerText);
+  var value = $(".searchText").val();
+  var url = "\n  https://www.baidu.com/s?wd=".concat(value);
+  window.open(url);
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.1c1a3ebb.js.map
+//# sourceMappingURL=main.a2025d45.js.map

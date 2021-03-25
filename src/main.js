@@ -73,5 +73,8 @@ $(document).on("keypress", (e) => {
 });
 
 $(".searchBtn").on("click", () => {
-  console.log($(".searchText").innerText);
+  const value = $(".searchText").val();
+  const url = `
+  https://www.baidu.com/s?wd=${value}`;
+  window.open(url);
 });
