@@ -3,8 +3,8 @@ const $lastLi = $siteList.find("li.last");
 const x = localStorage.getItem("x");
 const xObject = JSON.parse(x);
 const hashMap = xObject || [
-  { logo: "A", url: "https://www.acfun.cn" },
-  { logo: "A", url: "https://www.acfun.cn" },
+  { logo: "V", url: "https://www.v2ex.com" },
+  { logo: "J", url: "https://www.jiumodiary.com" },
 ];
 
 const simplifyUrl = (url) => {

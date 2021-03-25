@@ -123,11 +123,11 @@ var $lastLi = $siteList.find("li.last");
 var x = localStorage.getItem("x");
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: "A",
-  url: "https://www.acfun.cn"
+  logo: "V",
+  url: "https://www.v2ex.com"
 }, {
-  logo: "A",
-  url: "https://www.acfun.cn"
+  logo: "J",
+  url: "https://www.jiumodiary.com"
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
@@ -190,4 +190,4 @@ $(".searchBtn").on("click", function () {
   window.open(url);
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.a2025d45.js.map
+//# sourceMappingURL=main.96e1ecae.js.map
